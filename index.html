@@ -81,6 +81,57 @@ return Math.ceil(Math.random()*(m-n)+n);
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
+<h6>hw-03-01
+<style border:2px color=blue;></style>
+ <svg width:"300" height:"200">
+        
+<script>
+     d3.select("svg").append("circle").attr("cx", 150).attr("cy", 120).attr("r", 15);
+     d3.select("svg").append("rect").attr("x", 160).attr("y", 45).attr("width", 5).attr("height", 78);
+        for (i = 0; i < 6 ; i++) {
+         d3.select("svg").append("rect").attr("x", 10).attr("y", 45 + i * 30).attr("width", 300).attr("height", 1);
+         if (i == 5) {
+         d3.select("svg").append("text").attr("x", 140).attr("y", 45 + (i + 1) * 30).attr(stroke,"black").attr(font-size,"30px").text("A");
+                }
+            }
+        </script>
+    </svg>
+
+
+
+
+
+<h6>hw-03-02</script>
+    <svg width="400" height="300"> 
+<script>
+    for(var i=0; i<20; i++){
+        var num = random(20,300);
+        d3.select("svg")
+          .append("rect")
+          .attr({
+            x: 10,
+            y: 10+12*i,
+            width: num,
+            height: 10,
+            fill:"lightblue"
+        });
+        d3.select("svg")
+          .append("text")
+        .attr({
+            x: num+15,
+            y: 20+12*i,
+            "font-size": 12
+        }).text(num);
+    }
+    function random(n,m)
+    {
+        return Math.ceil(Math.random()*(m-n)+n)
+    }
+
+
+
+
+
 <p></p>
       </section>
       <footer>
